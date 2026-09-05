@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Indah Octaviani</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #8b0000;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .heart {
+            color: #ff0000;
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        .love-letter {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+            line-height: 1.6;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .hearts-container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-heart {
+            position: absolute;
+            color: #ff69b4;
+            animation: float 3s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            from { transform: translateY(100vh) rotate(0deg); }
+            to { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        button {
+            background: #ff1493;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .photo-frame {
+            border: 5px solid white;
+            border-radius: 15px;
+            margin: 5rem 0;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts-container" id="hearts"></div>
+    
+    <div class="container">
+        <div class="photo-frame">
+            <!-- Ganti dengan foto Indah Octaviani -->
+            <img src="1.png" alt="Indah Octaviani">
+        </div>
+        
+        <h1>Indah Octaviani ❤️</h1>
+        
+        <div class="love-letter">
+            <p>Untuk Indah Octaviani yang tercinta,</p>
+            <p>Awalnya cuma chat-chat biasa, kita mulai ngobrol tanpa beban, tanpa ekspektasi, dan tanpa tahu apa-apa tentang satu sama lain. Tiba-tiba, rasa itu datang tanpa kita rencanakan. Kita jadi akrab, sering berbagi cerita, dan lama-lama jadi saling nyaman, bahkan saling suka. Padahal, kita belum pernah ketemu secara langsung, belum tahu gimana bentuk fisik masing-masing, tapi entah kenapa, rasanya seperti kita udah saling mengenal lama.</p>
+            <p>Mungkin memang hati nggak pernah salah, kan? Dan kini, kita memilih untuk bersama meskipun jarak memisahkan. Semoga apa yang kita jalani bisa bertahan, karena cinta itu bukan soal jarak, tapi soal kepercayaan dan ketulusan."</p>
+            <p>"Semoga, apapun yang kita jalani ini membawa kebahagiaan buat kita berdua, dan semoga cinta yang tumbuh ini bisa selalu memberi kekuatan, meskipun kita jauh secara fisik. Doa aku selalu, semoga kita bisa selalu saling mendukung dan menjaga, sampai akhirnya kita bisa bertemu dan merasakan semua ini secara langsung. Aku percaya, meskipun belum bertemu, perasaan kita itu nyata.</p>
+            <p>Selalu milikmu,<br>Dan menyayangimu</p>
+        </div>
+
+        <button onclick="showLove()">Klik untuk kejutan!</button>
+    </div>
+
+    <script>
+        function createHearts() {
+            const heartsContainer = document.getElementById('hearts');
+            for (let i = 0; i < 50; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'floating-heart';
+                heart.innerHTML = '❤';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                heartsContainer.appendChild(heart);
+            }
+        }
+
+        function showLove() {
+            alert("Aku benar-benar menyayangimu, Indah Octaviani! aku Minta bukti kalau kamu menyayangin ku aku pengen di publish tolong 💖");
+        }
+
+        // Create floating hearts on load
+        window.onload = createHearts;
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Indah Octaviani</title>
+    <style>
+        /* CSS sebelumnya tetap dipertahankan */
+        /* Tambahan style untuk musik */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .music-player button {
+            background: #ff69b4;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemen sebelumnya tetap dipertahankan -->
+    
+    <!-- Tambahkan audio player -->
+    <div class="music-player">
+        <audio id="loveSong" loop>
+            <!-- Ganti dengan musik kamu (format MP3) -->
+            <source src="1.mp3" type="audio/mpeg">
+            Browser tidak mendukung elemen audio
+        </audio>
+        <p>🎵 Aku sayang Kamu Indah </p>
+        <button onclick="toggleMusic()">Putar </button>
+    </div>
+
+    <script>
+        // Script sebelumnya tetap dipertahankan
+        // Tambahan fungsi untuk musik
+        const audio = document.getElementById('loveSong');
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+            } else {
+                audio.play();
+            }
+            isPlaying = !isPlaying;
+        }
+
+        // Otomatis mainkan musik setelah interaksi pengguna
+        document.addEventListener('click', function() {
+            audio.play();
+            isPlaying = true;
+        }, { once: true });
+    </script>
+</body>
+</html>
